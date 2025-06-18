@@ -17,6 +17,8 @@ spec:
         replicaCount: 2
         service:
           type: LoadBalancer
+          port: 80
+          targetPort: 9898
         ingress:
           enabled: false
   syncPolicy:
