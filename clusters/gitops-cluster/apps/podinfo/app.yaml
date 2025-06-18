@@ -15,11 +15,9 @@ spec:
     helm:
       values: |
         replicaCount: 2
-        containerPort: 9898
         service:
           type: LoadBalancer
           port: 80
-          targetPort: 9898
         ingress:
           enabled: false
   syncPolicy:
